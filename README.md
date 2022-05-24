@@ -1,15 +1,10 @@
-# Getting Started
+# Use Cloudflare Workers Key Value store directly from Rust
 
 A template for kick starting a Cloudflare worker project using [`workers-rs`](https://github.com/cloudflare/workers-rs).
 
-This template is designed for compiling Rust to WebAssembly and publishing the resulting worker to 
-Cloudflare's [edge infrastructure](https://www.cloudflare.com/network/).
+https://developers.cloudflare.com/workers/tutorials/workers-kv-from-rust
 
 ## Usage 
-
-This template starts you off with a `src/lib.rs` file, acting as an entrypoint for requests hitting
-your Worker. Feel free to add more code in this file, or create Rust modules anywhere else for this
-project to use. 
 
 With `wrangler`, you can build, test, and deploy your Worker with the following commands: 
 
@@ -33,9 +28,4 @@ compiled WebAssembly, and as such so **must** all the code you write and depend 
 modules used in Rust-based Workers projects have to compile to the `wasm32-unknown-unknown` triple. 
 
 Read more about this on the [`workers-rs` project README](https://github.com/cloudflare/workers-rs).
-
-## Issues
-
-If you have any problems with the `worker` crate, please open an issue on the upstream project 
-issue tracker on the [`workers-rs` repository](https://github.com/cloudflare/workers-rs).
 
